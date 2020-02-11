@@ -18,3 +18,5 @@ sed -i 's/0xa0000 0xf60000/0xa0000 0x1fb0000/g' target/linux/ramips/dts/K2P.dts
 #sed -i 's/0xa0000 0xf60000/0x50000 0x1fb0000/g' target/linux/ramips/dts/K2P.dts
 #添加smartdns软件包
 git clone https://github.com/pymumu/smartdns package/smartdns
+/scripts/feeds update -a
+/scripts/feeds install -pd smartdns luci-app-smartdns
