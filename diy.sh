@@ -16,3 +16,5 @@ sed -i '/DTS := K2P/{n;s/16/32/g;}' target/linux/ramips/image/mt7621.mk
 sed -i 's/0xa0000 0xf60000/0xa0000 0x1fb0000/g' target/linux/ramips/dts/K2P.dts
 #公版分区布局
 #sed -i 's/0xa0000 0xf60000/0x50000 0x1fb0000/g' target/linux/ramips/dts/K2P.dts
+#添加smartdns软件包
+git clone https://github.com/pymumu/smartdns package/smartdns
